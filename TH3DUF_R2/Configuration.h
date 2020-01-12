@@ -161,7 +161,7 @@
 //===========================================================================
 // Creality CR-10 Options - Select 'Sanguino 1284P' from Tools > Board
 //===========================================================================
-//#define CR10
+#define CR10
 //#define CR10_MINI
 //#define CR10_S4
 //#define CR10_S5
@@ -179,7 +179,7 @@
 //#define TM3DAERO
 //#define TM3DAERO_EXTENDED
 //#define PETSFANG //This is the RIGHT mounted version - if using the left mount please use the CUSTOM_PROBE option.
-//#define CUSTOM_PROBE
+#define CUSTOM_PROBE
 
 // TMC2208 Creality Board Setting - uncomment this to set the driver type if you are using the TMC Creality board
 //#define TMC_CREALITY_BOARD
@@ -795,8 +795,8 @@
   *      O-- FRONT --+
   *    (0,0)
   */
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 10  // X offset: -left  +right  [of the nozzle]
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
+  #define X_PROBE_OFFSET_FROM_EXTRUDER -48  // X offset: -left  +right  [of the nozzle]
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER -10  // Y offset: -front +behind [the nozzle]
 #endif
 
 //===========================================================================
@@ -809,8 +809,8 @@
 
 // If you want to change the Esteps for your printer you can uncomment the below line and set CUSTOM_ESTEPS_VALUE to what you want - USE WHOLE NUMBERS ONLY
 // This option sets the esteps from the CUSTOM_ESTEPS_VALUE line below and does NOT reverse the E motor direction.
-//#define CUSTOM_ESTEPS
-#define CUSTOM_ESTEPS_VALUE 999
+#define CUSTOM_ESTEPS
+#define CUSTOM_ESTEPS_VALUE 941
 
 // If you are using an TH3D Tough Extruder or E3D Titan Extruder uncomment the below line to setup the firmware to the correct steps and direction. Also applicable to Tough Direct or Titan Aero setups.
 // This option sets the esteps from the TITAN_EXTRUDER_STEPS line below and reverses the E motor direction.
@@ -872,7 +872,7 @@
 //#define FAN_FIX
 
 // Use your own printer name
-//#define USER_PRINTER_NAME "CHANGE ME" 
+#define USER_PRINTER_NAME "Replicator" 
 
 // If your printer is homing to the endstops hard uncomment this to change the homing speed/divisor to make it less aggressive.
 //#define SLOWER_HOMING
@@ -914,13 +914,13 @@
 // Sales from our shop allow us to allocate time for community firmware development at no charge to you. <3
 // If you have a V3 BL Touch also uncomment the BLTOUCH_V3 line to fix issues with the new V3 probe.
 //
-//#define BLTOUCH
+#define BLTOUCH
 // If you are having issues with the probe not deploying/stowing correctly enable the below BLTOUCH_FORCE_SW_MODE
 //#define BLTOUCH_FORCE_SW_MODE
 // For V3.0 or 3.1: Set default mode to 5V mode at Marlin startup.
 //#define BLTOUCH_SET_5V_MODE
 // Here is where you set your servo pin. EZOut Servo Pin Numbers: Anet(with 2004LCD)/Ender3/5/CR-10 - 27, Anet(with 12864LCD)/Ender 2 - 29. For 2560 boards look for the pin you connected the servo wire to and enter below.
-//#define SERVO0_PIN 27
+#define SERVO0_PIN 27
 //
 // NOTE: On 1284p boards due to space limitations and the large amount of code the BLTouch requires for the LCD Menus
 // the Bootscreen and some Control > Motion menus will not be displayed due to space restrictions
